@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="2.1.0">
+  <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>EMPRESA DE PRUEBA S.A.</razonSocial>
+    <nombreComercial>PRUEBAS OPEN-FACTURA</nombreComercial>
+    <ruc>1722195755001</ruc>
+    <claveAcceso>0209202501172219575500110010010000000821234567819</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>001</ptoEmi>
+    <secuencial>000000082</secuencial>
+    <dirMatriz>AV. AMAZONAS Y NACIONES UNIDAS. QUITO</dirMatriz>
+    <contribuyenteRimpe>CONTRIBUYENTE RÉGIMEN RIMPE</contribuyenteRimpe>
+  </infoTributaria>
+  <infoFactura>
+    <fechaEmision>02/09/2025</fechaEmision>
+    <dirEstablecimiento>AV. AMAZONAS Y NACIONES UNIDAS. QUITO</dirEstablecimiento>
+    <obligadoContabilidad>SI</obligadoContabilidad>
+    <tipoIdentificacionComprador>05</tipoIdentificacionComprador>
+    <razonSocialComprador>Juan del Pueblo</razonSocialComprador>
+    <identificacionComprador>0602045759</identificacionComprador>
+    <direccionComprador>AV. 6 DE DICIEMBRE. QUITO</direccionComprador>
+    <totalSinImpuestos>110.00</totalSinImpuestos>
+    <totalDescuento>5.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>4</codigoPorcentaje>
+        <baseImponible>100.00</baseImponible>
+        <valor>15.00</valor>
+      </totalImpuesto>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>0</codigoPorcentaje>
+        <baseImponible>10.00</baseImponible>
+        <valor>0.00</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0.00</propina>
+    <importeTotal>125.00</importeTotal>
+    <moneda>DOLAR</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>125.00</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+  <detalles>
+    <detalle>
+      <codigoPrincipal>PROD-001</codigoPrincipal>
+      <descripcion>Servicio de Consultoría de Software</descripcion>
+      <cantidad>1.000000</cantidad>
+      <precioUnitario>105.000000</precioUnitario>
+      <descuento>5.00</descuento>
+      <precioTotalSinImpuesto>100.00</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>4</codigoPorcentaje>
+          <tarifa>15</tarifa>
+          <baseImponible>100.00</baseImponible>
+          <valor>15.00</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+    <detalle>
+      <codigoPrincipal>PROD-002</codigoPrincipal>
+      <descripcion>Producto con tarifa IVA 0%</descripcion>
+      <cantidad>1.000000</cantidad>
+      <precioUnitario>10.000000</precioUnitario>
+      <descuento>0.00</descuento>
+      <precioTotalSinImpuesto>10.00</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>0</codigoPorcentaje>
+          <tarifa>0</tarifa>
+          <baseImponible>10.00</baseImponible>
+          <valor>0.00</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+  </detalles>
+  <infoAdicional>
+    <campoAdicional nombre="Email">cliente@email.com</campoAdicional>
+    <campoAdicional nombre="Observaciones">Factura de prueba integral</campoAdicional>
+  </infoAdicional>
+<ds:Signature Id="id-d09bcc59a840" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference URI="#comprobante"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>RTX9sT/eeQikJlx7JCrOZnlzfedxxujaZTnviwCs1CE=</ds:DigestValue></ds:Reference><ds:Reference URI="#xades-id-d09bcc59a840" Type="http://uri.etsi.org/01903#SignedProperties"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>oXNNTeHoJDiNmv+iijiAdapM+z+3GkHhNCmTrM6yTR8=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>l3uDwlcrbXdSrsRcsTbwnjDJNuVU0fJ/yuw37QAnb6bj2blduVKBYVhqNr8PF5yFNeATMvKlH9UwdovRvGOQ3CMKDYeUARbeqhDmxuS/F5eE2iwN95t9rIufNd7fLL6pooouyR9AhOMEnjUKI/FzyroiIxcRhe7WRBmpjMt1EuSLrPXVQVMsP+5rxPMfRHxUiEgFGWRmvujGiakJZYf+0mAPjadxnIqrNO40MPVo9FJAFXqRirEHN+ZI9WF/yokI37mctZ8iHpVYPcW08gsCimlQy4ktrxv2guOgK1ehjyymUvOv45QaJPlq21zlAdWQBAiGA939miGfYoz/TUbBog==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties Target="#id-d09bcc59a840" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"><xades:SignedProperties Id="xades-id-d09bcc59a840"><xades:SignedSignatureProperties><xades:SigningTime>2025-09-03T04:46:38.365Z</xades:SigningTime></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></factura>
